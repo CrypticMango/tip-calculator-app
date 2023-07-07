@@ -57,7 +57,7 @@
           <button>15%</button>
           <button>25%</button>
           <button>50%</button>
-          <button>Custom</button>
+          <button class="custom">Custom</button>
         </div>
 				<form action="#">
 					<label for="number-of-people">
@@ -75,10 +75,20 @@
 					/>
 				</form>
 				<div class="totals">
-					<p class="total">Tip Amount</p>
-					<p class="person">/ person</p>
-					<p class="total">Total</p>
-					<p class="person">/ person</p>
+					<div class="top-total">
+            <span>
+              <p class="total">Tip Amount</p>
+              <p class="person">/ person</p>
+            </span>
+            <span>$0.00</span>
+          </div>
+					<div class="bottom-total">
+            <span>
+              <p class="total">Total</p>
+              <p class="person">/ person</p>
+            </span>
+            <span>$0.00</span>
+          </div>
 					<button class="reset">Reset</button>
 				</div>
 			</div>
