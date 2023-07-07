@@ -36,10 +36,11 @@
 		<main>
 			<img
 				src="/images/logo.svg"
-				alt="-splitter"
+				alt="logo-splitter"
 				aria-label="logo-splitter"
+        class="logo-splitter"
 			/>
-			<div>
+			<div class="calculator">
 				<form action="#">
 					<label for="bill"><h1>Bill</h1></label>
 					<input type="text" id="bill" name="bill" />
@@ -50,12 +51,14 @@
 					/>
 				</form>
 				<h2>Select Tip %</h2>
-				<button>5%</button>
-				<button>10%</button>
-				<button>15%</button>
-				<button>25%</button>
-				<button>50%</button>
-				<button>Custom</button>
+				<div class="percentage-buttons">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <button>Custom</button>
+        </div>
 				<form action="#">
 					<label for="number-of-people">
 						<h2>Number of People</h2></label
@@ -71,12 +74,12 @@
 						aria-label="person"
 					/>
 				</form>
-				<div>
-					<p>Tip Amount</p>
-					<p>/ person</p>
-					<p>Total</p>
-					<p>/ person</p>
-					<button>Reset</button>
+				<div class="totals">
+					<p class="total">Tip Amount</p>
+					<p class="person">/ person</p>
+					<p class="total">Total</p>
+					<p class="person">/ person</p>
+					<button class="reset">Reset</button>
 				</div>
 			</div>
 		</main>
